@@ -3,23 +3,6 @@ var inp = document.getElementById("taksName");
 var Add_Btn = document.getElementById("Add");
 var taskContainer = document.getElementById("taskContainer");
 var containers = document.querySelectorAll(".container");
-var fi = document.querySelector("#fi");
-var fd = document.querySelector("#fd");
-var fc = document.querySelector("#fc");
-var fs = document.querySelector("#fs");
-//
-fi.onclick = function(){
-    fd.remove();
-}
-fc.onclick = function(){
-    if (this.checked) {
-        fs.classList.add("checkedTask");
-        fs.classList.remove("discheckedTask");
-    }else{
-        fs.classList.remove("checkedTask");
-        fs.classList.add("discheckedTask");
-    }
-}
 inp.focus();
 
 Add_Btn.addEventListener('click', ()=>{
